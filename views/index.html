@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Kowloon Walled City (VR)</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="/aframe.js" defer></script>
-  </head>  
-  <body>
-        
-    <a-scene>
+<head>
+  <title>Kowloon Walled City (VR)</title>
+  <meta charset="utf-8">
+  <script src="aframe.js"></script>
+</head>  
+<body>
+  
+<a-scene>
 
-      <a-camera position="120 40 80" ></a-camera>
-      <a-sky></a-sky>
+  <a-camera position="120 40 80" ></a-camera>
+  <a-sky></a-sky>
 
-      <a-assets>
-        <a-asset-item id="n-obj" src="https://cdn.glitch.com/fa09dfe2-0b0e-4a9e-a70f-12e8b991b9ad%2Fkowloon-walled-city.obj?v=1578680108848"></a-asset-item>
-        <a-asset-item id="n-mat" src="https://cdn.glitch.com/fa09dfe2-0b0e-4a9e-a70f-12e8b991b9ad%2Fkowloon-walled-city.mtl?v=1578680098621"></a-asset-item>
-      </a-assets>
+  <a-assets>
+    <a-asset-item id="n-obj" src="assets/kowloon-walled-city.obj"></a-asset-item>
+    <a-asset-item id="n-mat" src="assets/kowloon-walled-city.mtl"></a-asset-item>
+  </a-assets>
 
-      <a-entity
-        obj-model="obj: #n-obj; mtl: #n-mat;" scale="0.01 0.01 0.01">
-      </a-entity>
+  <a-entity
+    obj-model="obj: #n-obj; mtl: #n-mat;"
+    scale="0.01 0.01 0.01">
+  </a-entity>
 
-  </a-scene>
-        
-  </body>
+</a-scene>
+</body>
 </html>

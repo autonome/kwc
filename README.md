@@ -1,21 +1,14 @@
-# Assets.js
-Assets.js allows you to use relative paths to serve your assets on Glitch.
+# Kowloon Walled City VR
 
-Replacing this: `https://cdn.glitch.com/us-east-1%3A1a0f89c8-26bf-4073-baed-2b409695e959%2Ffoobar.png` :(
 
-With this: `/assets/foobar.png` :)
+## Source Model
 
-## Getting Started
+IIRC I generated the mtl and obj from [this sketchup file on 3dwarehouse.com](https://3dwarehouse.sketchup.com/collection/u86e3e850-75c6-41f8-bb8c-db9ae8d660d5/Kowloon-Walled-City?sortBy=modifyTime%20DESC&searchTab=model&hl=en), but it was a while ago and I can't remember 😅
 
-### Install:
-Just copy and paste the contents of `assets.js` into your project.
+## Detailing
 
-### Example usage:
-Then reference that file as follows:
-```
-var assets = require("./assets");
-var express = require("express");
+I saw [this post](https://twitter.com/mflux/status/874182080359350273) from @mflux about procedural building generation that looked in the right direction.
 
-var app = express();
-app.use("/assets", assets);
-```
+And @colonthree replied with [examples of their work which was even closer](https://twitter.com/Colonthreee/status/874278263186747392).
+
+Their [tumblr post](has )
