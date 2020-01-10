@@ -1,26 +1,29 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Welcome to Assets.js!</title>
-    <meta name="description" content="A cool thing made with Assets.js">
-    <link id="favicon" rel="icon" href="https://gomix.com/favicon.ico" type="image/x-icon">
+    <title>Kowloon Walled City (VR)</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/style.css">
-  </head>
+    <script src="/aframe.js" defer></script>
+  </head>  
   <body>
-    <h1>
-      Assets.js
-    </h1>
-    <main>
-      <img src="/assets/foobar.png"/>
-      <img src="/assets/funny/cat.jpg"/>
-    </main>
-    <footer id="gWidget"></footer>
-    <script src="https://widget.gomix.me/widget.min.js"></script>
+        
+    <a-scene>
+
+      <a-camera position="120 40 80" ></a-camera>
+      <a-sky></a-sky>
+
+      <a-assets>
+        <a-asset-item id="n-obj" src="https://cdn.glitch.com/fa09dfe2-0b0e-4a9e-a70f-12e8b991b9ad%2Fkowloon-walled-city.obj?v=1578680108848"></a-asset-item>
+        <a-asset-item id="n-mat" src="https://cdn.glitch.com/fa09dfe2-0b0e-4a9e-a70f-12e8b991b9ad%2Fkowloon-walled-city.mtl?v=1578680098621"></a-asset-item>
+      </a-assets>
+
+      <a-entity
+        obj-model="obj: #n-obj; mtl: #n-mat;" scale="0.01 0.01 0.01">
+      </a-entity>
+
+  </a-scene>
+        
   </body>
 </html>
