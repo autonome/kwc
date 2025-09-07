@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kowloon Walled City (VR)</title>
+  <meta charset="utf-8">
+  <script src="public/aframe.js"></script>
+</head>  
+<body>
+  
+<a-scene>
+
+  <a-camera position="120 40 80" ></a-camera>
+  <a-sky></a-sky>
+
+  <a-assets>
+    <a-asset-item id="n-obj" src="public/kowloon-walled-city.obj"></a-asset-item>
+    <a-asset-item id="n-mat" src="public/kowloon-walled-city.mtl"></a-asset-item>
+  </a-assets>
+
+  <a-entity
+    obj-model="obj: #n-obj; mtl: #n-mat;"
+    scale="0.01 0.01 0.01">
+  </a-entity>
+
+</a-scene>
+</body>
+</html>

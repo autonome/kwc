@@ -1,20 +1,9 @@
 {
-  "name": "assets.js",
+  "name": "kowloon walled city model",
   "version": "0.0.1",
-  "description": "Assets.js library",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.16.2"
-  },
-  "engines": {
-    "node": "8"
-  },
+  "description": "use aframe to show a kowloon walled city model",
   "keywords": [
-    "node",
-    "express"
+    "a-frame"
   ],
   "license": "MIT"
 }
